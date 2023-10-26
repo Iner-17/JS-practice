@@ -1,0 +1,47 @@
+1. higher-order function
+2. Closure
+3. call stack
+4. Heap
+5. This
+6. global/window
+7. bind
+8. arrow function
+9. anonymous
+10. passed by value
+11. passed by reference
+12. object literal
+13. object constructor
+14. properties
+15. prototype chain
+16. inheritance
+17. OOP
+18. class
+19. constructor
+20. getter/setter
+21. instance method
+22. static method
+23. array 
+24. set 
+25. map
+26. garbage collector
+27. weakmap 
+28. non blocking event loop
+29. asynchronous
+30. single threaded
+31. set timeout
+32. callback function
+33. callback hell
+34. promise 
+35. resolve 
+36. reject
+37. then/catch
+38. async function
+39. await
+40. try/catch
+41. es modules
+42. default export
+43. named exports
+44. node package manager
+45. node modules
+46. DOM
+47. 
