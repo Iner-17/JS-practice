@@ -1,0 +1,10 @@
+.container {
+    min-height: 100vh;
+    background-color: #5fe75a;
+}
+
+.bg {
+    height: 100vh;
+
+    background-image: url("images/lubgimage.jpg");
+}
