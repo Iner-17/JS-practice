@@ -1,5 +1,3 @@
-const add = function (a, b) {
-    console.log(a + b);
-};
+const outputFun = () => console.log("fun");
 
-add(23, 23);
+setTimeout(outputFun, 2000);
