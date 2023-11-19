@@ -1,3 +1,9 @@
-const outputFun = () => console.log("fun");
+function changeBackgroundOnClick(color) {
+    return function () {
+        document.body.style.backgroundColor = `${color}`;
+    };
+}
 
-setTimeout(outputFun, 2000);
+const click1 = changeBackgroundOnClick("red");
+const click2 = changeBackgroundOnClick("blue");
+const click3 = changeBackgroundOnClick("green");
