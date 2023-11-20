@@ -1,9 +1,5 @@
-function changeBackgroundOnClick(color) {
-    return function () {
-        document.body.style.backgroundColor = `${color}`;
-    };
-}
+const numbers = [1, 2, 3, 4, 5];
 
-const click1 = changeBackgroundOnClick("red");
-const click2 = changeBackgroundOnClick("blue");
-const click3 = changeBackgroundOnClick("green");
+const total = (a, b) => a + b;
+
+console.log(numbers.reduce(total));
