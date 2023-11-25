@@ -1,8 +1,8 @@
-1. higher-order function
-2. Closure
-3. call stack
-4. Heap
-5. This
+1. higher-order function 🥬 
+2. Closure 🥬 
+3. call stack 🥬
+4. Heap 🥬
+5. This 🥬
 6. global/window
 7. bind
 8. arrow function

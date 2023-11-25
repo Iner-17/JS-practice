@@ -1,5 +1,7 @@
-const numbers = [1, 2, 3, 4, 5];
+const names = ["bong", "sweet", "bong", "bong"];
 
-const total = (a, b) => a + b;
+const bongCount = names.reduce((acc, curr) => {
+    return acc + (curr == "bong" ? 1 : 0);
+}, 0);
 
-console.log(numbers.reduce(total));
+console.log(bongCount);
