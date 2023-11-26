@@ -8,10 +8,28 @@
         <title>Document</title>
     </head>
     <body>
-        <button onclick="click1()">1</button>
-        <button onclick="click2()">2</button>
-        <button onclick="click3()">3</button>
-
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li>About</li>
+                <li>Projects</li>
+                <li class="dropdown" onclick="toggleDropdown(this)">
+                    =
+                    <ul class="dropdown-links">
+                        <li>bong</li>
+                        <li>+</li>
+                        <li>+</li>
+                        <li>+</li>
+                        <li>+</li>
+                        <li>+</li>
+                        <li>+</li>
+                        <li>+</li>
+                        <li>+</li>
+                    </ul>
+                </li>
+                <li class="img"><img src="#" alt="logo" /></li>
+            </ul>
+        </nav>
+        <div class="main-page"></div>
         <script src="js/index.js"></script>
     </body>
 </html>

@@ -3,9 +3,9 @@
 3. call stack 🥬
 4. Heap 🥬
 5. This 🥬
-6. global/window
-7. bind
-8. arrow function
+6. global/window 🥬
+7. bind 
+8. arrow function 
 9. anonymous
 10. passed by value
 11. passed by reference
