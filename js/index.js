@@ -1,7 +1,12 @@
-const toggleDropdown = (element) => {
-    const dropdown = document.querySelector(".dropdown-links");
-    dropdown.style.display =
-        dropdown.style.display === "grid" ? "none" : "grid";
-};
+const axiosRequest = require('axios')
 
-console.log("Hello World")
+async function getActivity() {
+    try {
+        let response = await axiosRequest.get('https://www.boredapi.com/api/activity')
+        console.log(`You could ${response.data.activity}`)
+    } catch (error) {
+        console.log(`Error ${error}`)
+    }
+}
+
+getActivity();
