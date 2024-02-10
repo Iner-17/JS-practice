@@ -1,12 +1,26 @@
-const axiosRequest = require('axios')
+let isBongSafe = true;
 
-async function getActivity() {
-    try {
-        let response = await axiosRequest.get('https://www.boredapi.com/api/activity')
-        console.log(`You could ${response.data.activity}`)
-    } catch (error) {
-        console.log(`${error}`)
-    }
+function callbackPromise() {
+
+    return new Promise((driving, crashed) => { 
+        if(!isBongSafe) {
+            crashed({
+                bianca: "sadge 😭",
+                bong: "deadge"
+            })
+        } else if (isBongSafe) {
+            driving({
+                bianca: "Happy 😁",
+                bong: "alive and kicking"
+            })
+        }
+    })
+
 }
 
-getActivity();
+
+callbackPromise().then((message) => {
+    console.log(`bong is ${message.bong} and Bianca is ${message.bianca}`)
+}).catch((message) => {
+    console.log(`bong is ${message.bong} :( and Bianca is ${message.bianca} `)
+})
