@@ -1,26 +1,21 @@
-let isBongSafe = true;
+let arrived = false;
+const ride = new Promise((resolve, reject) => {
 
-function callbackPromise() {
+    if (arrived) {
+        resolve("uber has arrived 🚗")
+    } else if (!arrived) {
+        reject("uber failed to arrive ☹")
+    }
 
-    return new Promise((driving, crashed) => { 
-        if(!isBongSafe) {
-            crashed({
-                bianca: "sadge 😭",
-                bong: "deadge"
-            })
-        } else if (isBongSafe) {
-            driving({
-                bianca: "Happy 😁",
-                bong: "alive and kicking"
-            })
-        }
-    })
-
-}
-
-
-callbackPromise().then((message) => {
-    console.log(`bong is ${message.bong} and Bianca is ${message.bianca}`)
-}).catch((message) => {
-    console.log(`bong is ${message.bong} :( and Bianca is ${message.bianca} `)
 })
+
+ride
+    .then((message) => {
+        console.log(`${message}`)
+    })
+    .then((message) => {
+        console.log(`Thanks for booking :D, enjoy your ride!`)
+    })
+    .catch((message) => {
+        console.log(`${message}`)
+    })
